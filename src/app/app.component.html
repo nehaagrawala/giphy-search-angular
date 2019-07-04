@@ -1,0 +1,98 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="header col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <span class="col-xs-12 col-sm-12 col-lg-12 heading">
+      {{ title }}
+    </span>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <input type="text" placeholder="What are you looking for ?" class="input-box-search" id="search" #searchTerm [(ngModel)]="searchValue"
+        />
+        <button disabled class="button-show-all">Show All <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <button type="submit" class="button-search" (click)="performSearch(searchTerm.value)"><i class="fa fa-search search-icon"></i></button>
+      </div>
+      <h3 class="text-header">You can search any gif without out search</h3>
+      <h5 class="text-header">Everything you need for your creative projects, websites, banners, presentations, magazines and advertising</h5>
+    </div>
+    <div *ngIf="!errorOccured" class="masonry-with-columns col-sm-12 col-md-12">
+      <div class="giphy-div" *ngFor="let g of giphies">
+        <img class="giphy-img" src="{{g.images.original.url}}">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12" *ngIf="errorOccured">{{error}}</div>
+      <div class="container-fluid">
+        <footer class="row footer-data col-xs-12">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <span class="footer-text col-md-12">Sign Up and get free content every week.</span>
+            <input type="text" placeholder="Enter Your Email ..." class="footer-input col-md-12" />
+            <button class="sign-up-button col-md-12">Sign Up</button>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <h5 class="list-heading">Browse By Categories </h5>
+            <div class="lisiting-data">
+              <div class="col-md-2">
+                <ul class="list-unstyled list-data">
+                  <li>Graphics</li>
+                  <li>PSDs</li>
+                  <li>Icons</li>
+                  <li>Template</li>
+                  <li>Theme</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <ul class="list-unstyled list-data">
+                  <li>Addons</li>
+                  <li>Fonts</li>
+                  <li>Textures</li>
+                  <li>Patterns</li>
+                  <li>Backgrounds</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <ul class="list-unstyled list-data">
+                  <li>Buttons</li>
+                  <li>Forms</li>
+                  <li>GUI</li>
+                  <li>Navigation</li>
+                  <li>UI Kits</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <ul class="list-unstyled list-data">
+                  <li>InfoGraphics</li>
+                  <li>Graphs</li>
+                  <li>Logos</li>
+                  <li>Vectors</li>
+                  <li>Business Cards</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <footer class="row">
+          <div class="copyright-footer col-md-12">
+            <div class="footer-links col-xs-12 col-sm-12 col-md-8">
+              <ul class="foote_bottom_ul_amrc">
+                <li>Affiliates</li>
+                <li>About</li>
+                <li>Contributors</li>
+                <li>Press</li>
+                <li>Media</li>
+                <li>Carrer</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="social-icons col-xs-12 col-sm-12 col-md-4">
+              <a href="#" class="fa fa-facebook social-icon"></a>
+              <a href="#" class="fa fa-twitter social-icon"></a>
+              <a href="#" class="fa fa-google social-icon"></a>
+              <a href="#" class="fa fa-instagram social-icon"></a>
+            </div>
+            <div class="copyright-message col-xs-12 col-sm-12 col-md-12">Copyright © 2018 myCompany All rights reserved.
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
