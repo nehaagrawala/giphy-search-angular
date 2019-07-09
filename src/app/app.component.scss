@@ -194,3 +194,30 @@ h3.text-header {
     justify-content: flex-end;
     width:30%;
 }
+@media only screen and (max-width: 600px) {
+    .footer-left-panel {
+        float: left;
+        width: 100%;
+        margin-left: 1%;
+    }
+    .footer-right-panel {
+        width: 100%;
+        display: inline-block;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        width:100%;
+    }
+    .footer-links {
+        float: left;
+        width: 100%;
+        word-break: break-all;
+    }
+    .lisiting-data {
+        width:100%;
+        display: inline-block;
+        justify-content: space-around;
+    }
+   
+}
