@@ -30,7 +30,6 @@
               "src/styles.less"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -88,7 +87,6 @@
               "src/styles.less"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
             "assets": [
               "src/favicon.ico",

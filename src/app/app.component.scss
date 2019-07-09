@@ -1,7 +1,9 @@
+
 .header {
     text-align:center;
     background-color: #c35a00;
     height: 240px;
+    width: 100%;
 }
 .heading {
     font-size: 70px;
@@ -12,6 +14,7 @@
 
 .input-box-search {
     font-size: 18px;
+    line-height: 27px;
     color: #becbd1;
     font-family: "Museo Slab";
     width: 250px;
@@ -22,7 +25,7 @@
 
 .button-show-all {
     border: 1px solid #e2eef4;
-    //height: 31px;
+    line-height: 27px;
     background-color: #e2eef4;
     font-size: 18px;
     color: #a9bec8;
@@ -30,6 +33,7 @@
 }
 .button-search {
     border-top-right-radius: 6px;
+    line-height: 27px;
     border-bottom-right-radius: 6px;
     border: 1px solid black;
     background-color: #000000;
@@ -62,7 +66,7 @@ h3.text-header {
 }
 .giphy-div {
     width: 100%;
-    background: #EC985A;
+    background: #becbd1;
     color: white;
     margin: 0 1rem 1rem 0;
     display: inline-block;
@@ -74,6 +78,7 @@ h3.text-header {
     background-color: #363b3e;
 }
 .lisiting-data {
+    width:100%;
     display: flex;
     justify-content: space-around;
 }
@@ -130,12 +135,13 @@ h3.text-header {
     font-size: 13px;
     color: #b4bdc2;
     font-family: "Myriad Pro";
-    padding-left: 15px;
     display: flex;
     justify-content: flex-start;
+    width:100%;
 }
 .copyright-footer {
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-left: 1%;
 }
 
 .foote_bottom_ul_amrc li {
@@ -155,13 +161,21 @@ h3.text-header {
     padding-left: 5px;
     padding-right: 0px;
 }
-
 .foote_bottom_ul_amrc {
     padding: 0;
 }
-
 .footer-links {
     float: left;
+    width: 70%;
+}
+.footer-left-panel {
+    float: left;
+    width:33%;
+    margin-left: 1%;
+}
+.footer-right-panel {
+    width:66%;
+    display: inline-block;
 }
 
 .social-icon {
@@ -178,4 +192,5 @@ h3.text-header {
 .social-icons {
     display: flex;
     justify-content: flex-end;
+    width:30%;
 }
